@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Typography-->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./style/Style_Astro.css" />
+    <title>katarzyna grasewicz</title>
+    <link rel="shortcut icon" href="./graphics/Logo.svg" />
+
+    <!--Scripts-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll.js"
+      defer
+    ></script>
+    <script src="./scripts/Animations.js" defer></script>
+    <script src="./scripts/Interactions.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor">
+      <h1 class="cursor-inside">Click & hold</h1>
+    </div>
+
+    <div class="project-title project-title-1">
+      <h3>JEWELLERY STORE</h3>
+    </div>
+
+    <div class="project-title project-title-2">
+      <h3>FLIGHT SEARCH</h3>
+    </div>
+
+    <div class="project-title project-title-3">
+      <h3>ART MUSEUM</h3>
+    </div>
+
+    <div class="top-section">
+
+      <div class="top-section__button hover">
+        <div class="top-section__button__icon closed">
+          <svg
+            id="menu-icon-svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 48 48"
+            style="enable-background: new 0 0 48 48"
+            xml:space="preserve"
+          >
+            <rect x="22.8" y="1.3" class="cross" width="2.3" height="45.3" />
+
+            <rect
+              x="22.8"
+              y="1.3"
+              transform="matrix(4.510443e-11 -1 1 4.510443e-11 -2.773028e-09 48)"
+              class="cross"
+              width="2.3"
+              height="45.3"
+            />
+          </svg>
+        </div>
+      </div>
+      <ul class="top-section__menu-list">
+        <li class="top-section__menu-list__item menu-item-1 hover">
+          <h1 class="top-section__menu-list__item__category menu-category-1"><a href="http://www.kgrasewicz.pl/">HOME</a></h1>
+        </li>
+        <li class="top-section__menu-list__item menu-item-2 hover">
+          <h1 class="top-section__menu-list__item__category menu-category-2">ABOUT</h1>
+        </li>
+        <li class="top-section__menu-list__item menu-item-3 hover">
+          <h1 class="top-section__menu-list__item__category menu-category-3">WORKS</h1>
+        </li>
+        <li class="top-section__menu-list__item menu-item-4 hover">
+          <h1 class="top-section__menu-list__item__category menu-category-4">CONTACT</h1>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+
+      <section class="about" id="distortion-text">
+        <div class="about__content">
+          <div class="about__content__title-1 hover">
+            <h1>WHO</h1>
+          </div>
+          <div class="about__content__title-2 hover">
+            <h1>AM I?</h1>
+          </div>
+          <div class="about__content__images hover" data-value="-.1">
+            <div class="about__content__images__img img-1" data-value=".05">
+              <img src="./graphics/Page_1.jpg" alt="" />
+            </div>
+            <div class="about__content__images__img img-2" data-value="-.09">
+              <img src="./graphics/Page_2.jpg" alt="" />
+            </div>
+            <div class="about__content__images__img img-3" data-value="-.05">
+              <img src="./graphics/Page_3.jpg" alt="" />
+            </div>
+            <div class="about__content__images__img img-4" data-value=".03">
+              <img src="./graphics/Page_4.jpg" alt="" />
+            </div>
+            <div class="about__content__images__img img-5" data-value="-.07">
+              <img src="./graphics/Page_5.jpg" alt="" />
+            </div>
+            <div class="about__content__images__img img-6" data-value=".07">
+              <img src="./graphics/Page_6.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="about__content__title-3">
+            <h1 class="about__content__title-3__desc-1">KASIA <br />GRASEWICZ</h1>
+            <h1 class="about__content__title-3__desc-2">
+              ASPIRING <br />FRONT-END<br />DEVELOPER<br />BASED IN<br />WARSAW
+            </h1>
+          </div>
+
+          <div class="about__content__skill about__content__skill-1">
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-1 skill-line-1">
+              // CSS
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-2 skill-line-2">
+              // SCSS
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-3 skill-line-3">
+              // SASS
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-4 skill-line-4">
+              // Figma
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-5 skill-line-5">
+              // HTML
+            </h5>
+          </div>
+          <div class="about__content__skill about__content__skill-2">
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-6 skill-line-1">
+              // Node.js
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-7 skill-line-2">
+              // jQuery
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-8 skill-line-3">
+              // React JS
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-9 skill-line-4">
+              // JavaScript
+            </h5>
+          </div>
+
+          <div class="about__content__skill about__content__skill-3">
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-10 skill-line-1">
+              // Linux
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-11 skill-line-2">
+              // Bootstrap
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-12 skill-line-3">
+              // Illustrator
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-13 skill-line-4">
+              // Photoshop
+            </h5>
+          </div>
+
+          <div class="about__content__skill about__content__skill-4">
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-14 skill-line-1">
+              // DAX
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-15 skill-line-2">
+              // SQL
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-16 skill-line-3">
+              // VBA
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-17 skill-line-4">
+              // Git
+            </h5>
+            <h5 class="about__content__skill__detailed about__content__skill__detailed-18 skill-line-5">
+              // GSAP
+            </h5>
+          </div>
+          <div class="about__content__scroll-line">
+            <div class="about__content__scroll-line__circle">SCROLL</div>
+            <svg class="about__content__scroll-line__circle__progress-ring" width="4vw" height="4vw">
+              <circle
+                class="about__content__scroll-line__circle__progress-ring__circle"
+                stroke="var(--secondcolor)"
+                stroke-width=".16vw"
+                fill="transparent"
+                r="4vw"
+                cx="4.08vw"
+                cy="4.08vw"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects__title"><h3>TAKE A LOOK AT MY PROJECTS.</h3></div>
+        <div class="projects__project projects__project-1 hover">
+          <div class="title-1-indicator"></div>
+
+          <div class="projects__project__img projects__project__img-1" data-scroll-speed="-50">
+            <img src="project-1.jpg" alt="" />
+          </div>
+          <div class="projects__project__img projects__project__img-2">
+            <img src="project-2.jpg" alt="" />
+          </div>
+
+          <div class="title-1-indicator-end"></div>
+        </div>
+        <div class="projects__project projects__project-2 hover">
+          <div class="title-2-indicator"></div>
+
+          <div class="projects__project__img projects__project__img-1">
+            <img src="project-3.jpg" alt="" />
+          </div>
+          <div class="projects__project__img projects__project__img-2">
+            <img src="project-2.jpg" alt="" />
+          </div>
+          <div class="title-2-indicator-end"></div>
+        </div>
+
+        <div class="projects__project projects__project-3 hover">
+          <div class="title-3-indicator"></div>
+
+          <div class="projects__project__img projects__project__img-1">
+            <img src="project-1.jpg" alt="" />
+          </div>
+          <div class="projects__project__img projects__project__img-2">
+            <img src="project-3.jpg" alt="" />
+          </div>
+          <div class="title-3-indicator-end"></div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__scroll-line"></div>
+        <div class="contact__square"></div>
+        <div class="contact__title">
+          <h1>LET'S TALK</h1>
+        </div>
+        <div class="contact__title-line"></div>
+
+        <div class="contact__links">
+          <div class="contact__links__line"></div>
+
+          <div class="contact__links__email hover">
+            <a href="mailto:grasewiczkatarzyna@gmail.com">E-MAIL</a>
+          </div>
+
+          <div class="contact__links__github hover">
+            <a href="https://github.com/kgrasewicz" target="_blank">GITHUB</a>
+          </div>
+
+          <div class="contact__links__linkedin hover">
+            <a
+              href="https://www.linkedin.com/in/katarzyna-grasewicz-265b92181"
+              target="_blank"
+              >LINKEDIN</a
+            >
+          </div>
+        </div>
+
+        <div class="contact__back-container">
+          <h5 class="hover">
+            Back to top
+            <div class="contact__back-container__back-arrow">
+              <svg
+                version="1.1"
+                id="Warstwa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 48 48"
+                style="enable-background: new 0 0 48 48"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #e8e4d4;
+                    stroke: #e8e4d4;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: none;
+                    stroke: #e8e4d4;
+                    stroke-width: 30;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <symbol
+                  id="Arrow_x5F_Retro"
+                  viewBox="-185.9 -210.4 371.6 416.9"
+                >
+                  <g>
+                    <path
+                      class="st0"
+                      d="M0.1-175.8C-22.5-100.6-80.7-28.8-171.1,23.9c-6.7,3.7-13,1.7-14.5-4.7c-1.3-5.3,2.4-12.9,7.9-17
+			c0.6-0.5,1.3-0.9,1.9-1.2c94-53.9,153-129,173.3-207.5c1.5-5.3,3.2-5.3,4.7,0C22.6-127.9,81.6-52.9,175.6,1.1
+			c5.6,3,10.3,10.2,10.1,16.2c0,0.7-0.1,1.4-0.2,2c-1.5,6.3-7.8,8.4-14.5,4.7C80.8-28.9,22.8-100.6,0.1-175.8z"
+                    />
+                  </g>
+                  <path class="st1" d="M-0.2,206.5l0.3-389.2L-0.2,206.5z" />
+                </symbol>
+                <symbol id="Nowy_symbol" viewBox="-185.9 -210.4 371.6 416.9">
+                  <use
+                    xlink:href="#Arrow_x5F_Retro"
+                    width="371.6"
+                    height="416.9"
+                    id="XMLID_4_"
+                    x="-185.9"
+                    y="-210.4"
+                    transform="matrix(1 0 0 1 -5.485948e-04 -5.187988e-04)"
+                    style="overflow: visible"
+                  />
+                </symbol>
+                <use
+                  xlink:href="#Nowy_symbol"
+                  width="371.6"
+                  height="416.9"
+                  id="XMLID_2_"
+                  x="-185.9"
+                  y="-210.4"
+                  transform="matrix(-0.1023 0 0 0.1025 24 24.6567)"
+                  style="overflow: visible"
+                />
+              </svg>
+            </div>
+          </h5>
+        </div>
+
+        <div class="contact__info-container">
+          <h5>
+            <span class="hover">WEBSITE</span> DESIGNED AND DEVELOPED BY<br />
+            KASIA GRASEWICZ WITH COFFEE AND
+            <div class="heart">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 455 455"
+                style="enable-background: new 0 0 455 455"
+                xml:space="preserve"
+              >
+                <path
+                  d="M326.632,10.346c-38.733,0-74.991,17.537-99.132,46.92c-24.141-29.383-60.399-46.92-99.132-46.92
+         C57.586,10.346,0,67.931,0,138.714c0,55.426,33.049,119.535,98.23,190.546c50.162,54.649,104.729,96.96,120.257,108.626l9.01,6.769
+         l9.009-6.768c15.53-11.667,70.099-53.979,120.26-108.625C421.95,258.251,455,194.141,455,138.714
+         C455,67.931,397.414,10.346,326.632,10.346z"
+                />
+              </svg>
+            </div>
+          </h5>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
