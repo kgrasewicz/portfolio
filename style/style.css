@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   --maincolor: #050607;
-  --secondcolor: #e8e4d4;
+  --secondcolor: #eceadf;
   --thirdcolor: #dc2121;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -87,7 +87,7 @@ body {
   .cursor.animate:after {
     background: var(--secondcolor);
     -webkit-animation: cursorAnimation 0.5s ease forwards;
-            animation: cursorAnimation 0.5s ease forwards;
+    animation: cursorAnimation 0.5s ease forwards;
     width: 0px;
     height: 0px;
     -webkit-transform: translate(-50%, -50%);
@@ -220,7 +220,6 @@ h5 {
     width: 100vw;
   }
 }
-
 @keyframes introLine {
   to {
     width: 100vw;
@@ -266,11 +265,11 @@ h5 {
   top: 50%;
   left: 50%;
   width: 94vw;
-  -webkit-transform: translate(-50%, 1000%);
-          transform: translate(-50%, 1000%);
+  -webkit-transform: translate(-50%, 1100%);
+          transform: translate(-50%, 1100%);
   font-weight: 400;
   -webkit-animation: introTitle 1.2s 1s ease forwards;
-          animation: introTitle 1.2s 1s ease forwards;
+  animation: introTitle 1.2s 1s ease forwards;
 }
 @media only screen and (max-width: 600px) {
   .about__content__title-1 h1, .about__content__title-2 h1 {
@@ -307,7 +306,7 @@ h5 {
           transform: translate(-50%, -50%);
   background: var(--secondcolor);
   -webkit-animation: introLineAnimation 0.88s ease forwards;
-          animation: introLineAnimation 0.88s ease forwards;
+  animation: introLineAnimation 0.88s ease forwards;
 }
 .about__content__title-3 h1 {
   -webkit-transform: translate(-50%, calc(-50% + 60vw));
@@ -385,7 +384,7 @@ h5 {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   -webkit-animation: images 1.2s 1s ease forwards;
-          animation: images 1.2s 1s ease forwards;
+  animation: images 1.2s 1s ease forwards;
 }
 .about__content__images .img-1 {
   top: 0%;
@@ -441,20 +440,20 @@ h5 {
   overflow: visible;
 }
 .about__content.about-hovered .about__content__title-1 h1 {
-  -webkit-transform: translate(-50%, 1000%) !important;
-          transform: translate(-50%, 1000%) !important;
+  -webkit-transform: translate(-50%, 1100%) !important;
+          transform: translate(-50%, 1100%) !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .about__content.about-hovered .about__content__title-2 h1 {
-  -webkit-transform: translate(-50%, 1000%) !important;
-          transform: translate(-50%, 1000%) !important;
+  -webkit-transform: translate(-50%, 1100%) !important;
+          transform: translate(-50%, 1100%) !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .about__content.about-hovered .about__content__title-3 {
   -webkit-animation: lineAnimation 1.5s ease forwards;
-          animation: lineAnimation 1.5s ease forwards;
+  animation: lineAnimation 1.5s ease forwards;
 }
 .about__content.about-hovered .about__content__title-3 h1 {
   -webkit-transform: translate(-50%, calc(-50%));
@@ -602,7 +601,7 @@ h5 {
 }
 @media only screen and (max-width: 996px) {
   .about__content__scroll-line {
-    top: 90vh;
+    top: 85vh;
     width: 1.5px;
   }
 }
@@ -612,8 +611,8 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   justify-items: stretch;
+  -moz-column-gap: 1vw;
   -webkit-column-gap: 1vw;
-     -moz-column-gap: 1vw;
           column-gap: 1vw;
 }
 .about__content__skill h5 {
@@ -694,23 +693,23 @@ h5 {
 }
 .about .about-hovered .about__content__skill__detailed-1, .about .about-hovered .about__content__skill__detailed-6, .about .about-hovered .about__content__skill__detailed-10, .about .about-hovered .about__content__skill__detailed-14 {
   -webkit-animation: skillsAnimation 1.2s 1s ease forwards;
-          animation: skillsAnimation 1.2s 1s ease forwards;
+  animation: skillsAnimation 1.2s 1s ease forwards;
 }
 .about .about-hovered .about__content__skill__detailed-2, .about .about-hovered .about__content__skill__detailed-7, .about .about-hovered .about__content__skill__detailed-11, .about .about-hovered .about__content__skill__detailed-15 {
   -webkit-animation: skillsAnimation 1.5s 1s ease forwards;
-          animation: skillsAnimation 1.5s 1s ease forwards;
+  animation: skillsAnimation 1.5s 1s ease forwards;
 }
 .about .about-hovered .about__content__skill__detailed-3, .about .about-hovered .about__content__skill__detailed-8, .about .about-hovered .about__content__skill__detailed-12, .about .about-hovered .about__content__skill__detailed-16 {
   -webkit-animation: skillsAnimation 1.8s 1s ease forwards;
-          animation: skillsAnimation 1.8s 1s ease forwards;
+  animation: skillsAnimation 1.8s 1s ease forwards;
 }
 .about .about-hovered .about__content__skill__detailed-4, .about .about-hovered .about__content__skill__detailed-9, .about .about-hovered .about__content__skill__detailed-13, .about .about-hovered .about__content__skill__detailed-17 {
   -webkit-animation: skillsAnimation 2.1s 1s ease forwards;
-          animation: skillsAnimation 2.1s 1s ease forwards;
+  animation: skillsAnimation 2.1s 1s ease forwards;
 }
 .about .about-hovered .about__content__skill__detailed-5, .about .about-hovered .about__content__skill__detailed-18 {
   -webkit-animation: skillsAnimation 2.4s 1s ease forwards;
-          animation: skillsAnimation 2.4s 1s ease forwards;
+  animation: skillsAnimation 2.4s 1s ease forwards;
 }
 
 @-webkit-keyframes introLineAnimation {
@@ -718,7 +717,6 @@ h5 {
     width: 88vw;
   }
 }
-
 @keyframes introLineAnimation {
   to {
     width: 88vw;
@@ -897,13 +895,13 @@ h5 {
   left: 50%;
   top: 0%;
   width: 0vw;
-  height: 5vh;
+  height: calc(8rem + .5vw);
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background: var(--maincolor);
-  z-index: 2;
+  z-index: 101;
+  -moz-column-gap: 60vw;
   -webkit-column-gap: 60vw;
-     -moz-column-gap: 60vw;
           column-gap: 60vw;
   visibility: hidden;
   -webkit-transition: 0.5s;
@@ -911,7 +909,7 @@ h5 {
   visibility: visible;
   transition: 0.5s;
   -webkit-animation: introTopSection 1s ease-in-out forwards;
-          animation: introTopSection 1s ease-in-out forwards;
+  animation: introTopSection 1s ease-in-out forwards;
 }
 .top-section.open {
   height: 100vh !important;
@@ -932,7 +930,7 @@ h5 {
 }
 .top-section__button.visible {
   -webkit-animation: fadeIn 0.3s linear forwards;
-          animation: fadeIn 0.3s linear forwards;
+  animation: fadeIn 0.3s linear forwards;
 }
 .top-section__button__icon {
   width: calc(3rem + .5vw);
@@ -1013,7 +1011,6 @@ h5 {
     width: 100vw;
   }
 }
-
 @keyframes introTopSection {
   to {
     width: 100vw;
@@ -1441,6 +1438,7 @@ h5 {
   place-items: center;
   border-top: 2px solid var(--secondcolor);
   overflow: hidden;
+  background: var(--maincolor);
 }
 .contact__back-container h5 {
   font-size: calc(1.3rem + .5vw);
@@ -1460,7 +1458,7 @@ h5 {
   font-size: calc(1.8rem + .5vw);
   display: inline-block;
   -webkit-animation: backArrow 1.5s ease-in-out infinite;
-          animation: backArrow 1.5s ease-in-out infinite;
+  animation: backArrow 1.5s ease-in-out infinite;
   padding: 0 0 0 0.2vw;
 }
 @media only screen and (max-width: 996px) {
@@ -1504,7 +1502,7 @@ h5 {
 .contact__info-container .heart svg {
   width: 90%;
   -webkit-animation: heartBeating 1.5s ease-in-out infinite both;
-          animation: heartBeating 1.5s ease-in-out infinite both;
+  animation: heartBeating 1.5s ease-in-out infinite both;
 }
 .contact__info-container .heart path {
   fill: var(--secondcolor);
@@ -1538,7 +1536,6 @@ h5 {
             transform: translateY(1px);
   }
 }
-
 @keyframes backArrow {
   0% {
     -webkit-transform: translateY(1px);
@@ -1586,4 +1583,4 @@ h5 {
   45% {
     width: 90%;
   }
-}/*# sourceMappingURL=Style_Astro.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -12,8 +12,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Stylesheets-->
-    <link rel="stylesheet" href="./style/Style_Astro.css" />
-    <title>katarzyna grasewicz</title>
+    <link rel="stylesheet" href="./style/style.css?ver=&lt;?php echo rand(111,989)?&gt;" />
+    <title>Katarzyna Grasewicz | Portfolio</title>
     <link rel="shortcut icon" href="./graphics/Logo.svg" />
 
     <!--Scripts-->
@@ -43,8 +43,16 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll.js"
       defer
     ></script>
-    <script src="./scripts/Animations.js" defer></script>
-    <script src="./scripts/Interactions.js" defer></script>
+    <script>
+      if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      window.location = 'microsoft-edge:' + window.location;
+      setTimeout(function() {
+        window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+      }, 1);
+    }
+    </script>
+    <script src="./scripts/Animations.js?ver=&lt;?php echo rand(111,989)?&gt;" defer></script>
+    <script src="./scripts/Interactions.js?ver=&lt;?php echo rand(111,989)?&gt;" defer></script>
   </head>
 
   <body>
