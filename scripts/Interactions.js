@@ -2,6 +2,15 @@ const cursor = document.querySelector(".cursor");
 let scrollTop = window.pageYOffset;
 const currentCursorPosition = $(".cursor").offset().top + $(window).scrollTop();
 
+
+window.onload = () => {
+
+$('.loader').css("display","none")
+$('.top-section, .page-container, .cursor').removeClass("hidden");
+
+}
+
+
 document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
