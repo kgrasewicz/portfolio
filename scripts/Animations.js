@@ -38,20 +38,6 @@ var scene_animationProject2 = new ScrollMagic.Scene({
 
 
 
-var animationProject3 = new TimelineMax();
-
-animationProject3
-  .to(".projects__project-3 > .projects__project__img-1", 1, { y: "20%", ease: Linear.easeNone })
-  .to(".projects__project-3 > .projects__project__img-2", 1, { y: "-20%", ease: Linear.easeNone });
-
-var scene_animationProject3 = new ScrollMagic.Scene({
-  triggerElement: ".title-3-indicator-end",
-  duration: "120%",
-  triggerHook: 1,
-})
-  .setTween(animationProject3)
-  .addTo(controller_1);
-
 
 
 var animationImgVertical = new TimelineMax();
@@ -299,38 +285,6 @@ new ScrollMagic.Scene({
 
   .setTween(animationProjectTitle2End)
   .addTo(controller);
-
-var animationProjectTitle3Start = new TimelineMax();
-
-animationProjectTitle3Start.to(".project-title-3 h3", 1, {
-  top: "50%",
-});
-
-new ScrollMagic.Scene({
-  triggerElement: ".title-3-indicator",
-  duration: "50%",
-  triggerHook: 0,
-})
-
-  .setTween(animationProjectTitle3Start)
-  .addTo(controller);
-
-var animationProjectTitle3End = new TimelineMax();
-
-animationProjectTitle3End.to(".project-title-3 h3", 1, {
-  top: "160%",
-});
-
-new ScrollMagic.Scene({
-  triggerElement: ".title-3-indicator-end",
-  duration: "50%",
-  triggerHook: 0,
-})
-
-  .setTween(animationProjectTitle3End)
-  .addTo(controller);
-
-
 
 
 

@@ -27,8 +27,6 @@ if ($(window).width() > 1200) {
         let x = (e.clientX - 0.5 * window.innerWidth) * moving_value;
         let y = (e.clientY - 0.5 * window.innerHeight) * moving_value;
 
-        console.log(x);
-        console.log(y);
 
         move.style.transform =
           "translateX(calc(-50% + " +
@@ -63,7 +61,7 @@ if ($(window).width() > 996) {
           $(el2).hasClass("about__content__scroll-line")
         ) {
           $(".cursor").addClass("hoveredCursor about-hovered");
-          console.log("works");
+
         } else {
           $(".cursor").addClass("hoveredCursor");
           $(el2).addClass("hovered");
@@ -130,13 +128,21 @@ $(document).ready(function () {
   setProgress(0);
 });
 
+$(".projects__project-1").on('click', () => {
+  window.location ="https://blau.netlify.app/"
+})
+
+$(".projects__project-2").on('click', () => {
+  window.location ="http://www.szukam-osla.pl"
+})
+
 if ($(window).width() > 1200) {
   $(".about__content")
     .on("mousedown", function (event) {
       timeout_id = setTimeout(function () {
         $(".cursor").addClass("animate");
         $(".about__content").addClass("about-hovered");
-        $(".page-container").css("height", "1090vh");
+        $(".page-container").css("height", "820vh");
         $(".about__content__title-1").removeClass("hover");
         $(".about__content__title-2").removeClass("hover");
         $(".about__content__images").removeClass("hover");
@@ -179,7 +185,7 @@ if ($(window).width() > 1200) {
     .on("mousedown", function (event) {
       $(".cursor").addClass("animate");
       $(".about__content").addClass("about-hovered");
-      $(".page-container").css("height", "1090vh");
+      $(".page-container").css("height", "820vh");
       $(".about__content__title-1").removeClass("hover");
       $(".about__content__title-2").removeClass("hover");
       $(".about__content__title-1 h1, .about__content__title-2 h1 ").css(
