@@ -4,15 +4,33 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
+    rel="preload"
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
 
-    <head>
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </noscript>
+
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio page created by Katarzyna Grasewicz."
+    />
+
     <!--Stylesheets-->
-    <link rel="stylesheet" href="./style/style.css?ver=&lt;?php echo rand(111,989)?&gt;" />
+    <link
+      rel="stylesheet"
+      href="./style/style.css?ver=&lt;?php echo rand(111,989)?&gt;"
+    />
     <title>Katarzyna Grasewicz | Portfolio</title>
     <link rel="shortcut icon" href="./graphics/Logo.svg" />
 
@@ -44,35 +62,39 @@
       defer
     ></script>
     <script>
-      if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
-      window.location = 'microsoft-edge:' + window.location;
-      setTimeout(function() {
-        window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
-      }, 1);
-    }
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+        window.location = "microsoft-edge:" + window.location;
+        setTimeout(function () {
+          window.location = "https://go.microsoft.com/fwlink/?linkid=2135547";
+        }, 1);
+      }
     </script>
-    <script src="./scripts/Animations.js?ver=&lt;?php echo rand(111,989)?&gt;" defer></script>
-    <script src="./scripts/Interactions.js?ver=&lt;?php echo rand(111,989)?&gt;" defer></script>
+    <script
+      src="./scripts/Animations.js?ver=&lt;?php echo rand(111,989)?&gt;"
+      defer
+    ></script>
+    <script
+      src="./scripts/Interactions.js?ver=&lt;?php echo rand(111,989)?&gt;"
+      defer
+    ></script>
   </head>
 
   <body>
-
     <div class="loader">Loading...</div>
 
     <div class="cursor hidden">
       <h1 class="cursor-inside">Click & hold</h1>
     </div>
 
-    <a class="project-title project-title-1">
+    <div class="project-title project-title-1">
       <h3 onclick="location.href='https://google.com';">JEWELLERY STORE</h3>
-    </a>
+    </div>
 
-    <a class="project-title project-title-2">
+    <div class="project-title project-title-2">
       <h3>OSIOŁ NA TRANSPORT</h3>
-    </a>
+    </div>
 
     <div class="top-section hidden">
-
       <div class="top-section__button hover">
         <div class="top-section__button__icon closed">
           <svg
@@ -98,22 +120,29 @@
       </div>
       <ul class="top-section__menu-list">
         <li class="top-section__menu-list__item menu-item-1 hover">
-          <h1 class="top-section__menu-list__item__category menu-category-1"><a href="http://www.kgrasewicz.pl/">HOME</a></h1>
+          <h1 class="top-section__menu-list__item__category menu-category-1">
+            <a href="http://www.kgrasewicz.pl/">HOME</a>
+          </h1>
         </li>
         <li class="top-section__menu-list__item menu-item-2 hover">
-          <h1 class="top-section__menu-list__item__category menu-category-2">ABOUT</h1>
+          <h1 class="top-section__menu-list__item__category menu-category-2">
+            ABOUT
+          </h1>
         </li>
         <li class="top-section__menu-list__item menu-item-3 hover">
-          <h1 class="top-section__menu-list__item__category menu-category-3">WORKS</h1>
+          <h1 class="top-section__menu-list__item__category menu-category-3">
+            WORKS
+          </h1>
         </li>
         <li class="top-section__menu-list__item menu-item-4 hover">
-          <h1 class="top-section__menu-list__item__category menu-category-4">CONTACT</h1>
+          <h1 class="top-section__menu-list__item__category menu-category-4">
+            CONTACT
+          </h1>
         </li>
       </ul>
     </div>
 
     <div class="page-container hidden">
-
       <section class="about" id="distortion-text">
         <div class="about__content">
           <div class="about__content__title-1 hover">
@@ -124,101 +153,217 @@
           </div>
           <div class="about__content__images hover" data-value="-.1">
             <div class="about__content__images__img img-1" data-value=".05">
-              <img src="./graphics/Page_1.jpg" alt="" />
+              <img src="./graphics/Page_1.jpg" alt="Home graphics" />
             </div>
             <div class="about__content__images__img img-2" data-value="-.09">
-              <img src="./graphics/Page_2.jpg" alt="" />
+              <img src="./graphics/Page_2.jpg" alt="Home graphics" />
             </div>
             <div class="about__content__images__img img-3" data-value="-.05">
-              <img src="./graphics/Page_3.jpg" alt="" />
+              <img src="./graphics/Page_3.jpg" alt="Home graphics" />
             </div>
             <div class="about__content__images__img img-4" data-value=".03">
-              <img src="./graphics/Page_4.jpg" alt="" />
+              <img src="./graphics/Page_4.jpg" alt="Home graphics" />
             </div>
             <div class="about__content__images__img img-5" data-value="-.07">
-              <img src="./graphics/Page_5.jpg" alt="" />
+              <img src="./graphics/Page_5.jpg" alt="Home graphics" />
             </div>
             <div class="about__content__images__img img-6" data-value=".07">
-              <img src="./graphics/Page_6.jpg" alt="" />
+              <img src="./graphics/Page_6.jpg" alt="Home graphics" />
             </div>
           </div>
 
           <div class="about__content__title-3">
-            <h1 class="about__content__title-3__desc-1">KASIA <br />GRASEWICZ</h1>
+            <h1 class="about__content__title-3__desc-1">
+              KASIA <br />GRASEWICZ
+            </h1>
             <h1 class="about__content__title-3__desc-2">
               ASPIRING <br />FRONT-END<br />DEVELOPER<br />BASED IN<br />WARSAW
             </h1>
           </div>
 
           <div class="about__content__skill about__content__skill-1">
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-1 skill-line-1">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-1
+                skill-line-1
+              "
+            >
               // CSS
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-2 skill-line-2">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-2
+                skill-line-2
+              "
+            >
               // SCSS
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-3 skill-line-3">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-3
+                skill-line-3
+              "
+            >
               // SASS
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-4 skill-line-4">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-4
+                skill-line-4
+              "
+            >
               // Figma
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-5 skill-line-5">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-5
+                skill-line-5
+              "
+            >
               // HTML
             </h5>
           </div>
           <div class="about__content__skill about__content__skill-2">
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-6 skill-line-1">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-6
+                skill-line-1
+              "
+            >
               // Node.js
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-7 skill-line-2">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-7
+                skill-line-2
+              "
+            >
               // jQuery
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-8 skill-line-3">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-8
+                skill-line-3
+              "
+            >
               // React JS
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-9 skill-line-4">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-9
+                skill-line-4
+              "
+            >
               // JavaScript
             </h5>
           </div>
 
           <div class="about__content__skill about__content__skill-3">
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-10 skill-line-1">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-10
+                skill-line-1
+              "
+            >
               // Linux
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-11 skill-line-2">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-11
+                skill-line-2
+              "
+            >
               // Bootstrap
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-12 skill-line-3">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-12
+                skill-line-3
+              "
+            >
               // Illustrator
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-13 skill-line-4">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-13
+                skill-line-4
+              "
+            >
               // Photoshop
             </h5>
           </div>
 
           <div class="about__content__skill about__content__skill-4">
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-14 skill-line-1">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-14
+                skill-line-1
+              "
+            >
               // DAX
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-15 skill-line-2">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-15
+                skill-line-2
+              "
+            >
               // SQL
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-16 skill-line-3">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-16
+                skill-line-3
+              "
+            >
               // VBA
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-17 skill-line-4">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-17
+                skill-line-4
+              "
+            >
               // Git
             </h5>
-            <h5 class="about__content__skill__detailed about__content__skill__detailed-18 skill-line-5">
+            <h5
+              class="
+                about__content__skill__detailed
+                about__content__skill__detailed-18
+                skill-line-5
+              "
+            >
               // GSAP
             </h5>
           </div>
           <div class="about__content__scroll-line">
             <div class="about__content__scroll-line__circle">SCROLL</div>
-            <svg class="about__content__scroll-line__circle__progress-ring" width="4vw" height="4vw">
+            <svg
+              class="about__content__scroll-line__circle__progress-ring"
+              width="4vw"
+              height="4vw"
+            >
               <circle
-                class="about__content__scroll-line__circle__progress-ring__circle"
+                class="
+                  about__content__scroll-line__circle__progress-ring__circle
+                "
                 stroke="var(--secondcolor)"
                 stroke-width=".16vw"
                 fill="transparent"
@@ -236,11 +381,14 @@
         <div class="projects__project projects__project-1 hover">
           <div class="title-1-indicator"></div>
 
-          <div class="projects__project__img projects__project__img-1" data-scroll-speed="-50">
-            <img src="./graphics/blau1.png" alt="" />
+          <div
+            class="projects__project__img projects__project__img-1"
+            data-scroll-speed="-50"
+          >
+            <img src="./graphics/blau1.jpg" alt="Project graphics" />
           </div>
           <div class="projects__project__img projects__project__img-2">
-            <img src="./graphics/blau2.png"alt="" />
+            <img src="./graphics/blau2.png" alt="Project graphics" />
           </div>
 
           <div class="title-1-indicator-end"></div>
@@ -249,14 +397,13 @@
           <div class="title-2-indicator"></div>
 
           <div class="projects__project__img projects__project__img-1">
-            <img src="./graphics/osiol1.png" alt="" />
+            <img src="./graphics/osiol1.png" alt="Project graphics" />
           </div>
           <div class="projects__project__img projects__project__img-2">
-            <img src="./graphics/osiol2.png" alt="" />
+            <img src="./graphics/osiol2.png" alt="Project graphics" />
           </div>
           <div class="title-2-indicator-end"></div>
         </div>
-
       </section>
 
       <section class="contact">
@@ -275,13 +422,11 @@
           </div>
 
           <div class="contact__links__github hover">
-            <a href="https://github.com/kgrasewicz" target="_blank">GITHUB</a>
+            <a href="https://github.com/kgrasewicz">GITHUB</a>
           </div>
 
           <div class="contact__links__linkedin hover">
-            <a
-              href="https://www.linkedin.com/in/katarzyna-grasewicz-265b92181"
-              target="_blank"
+            <a href="https://www.linkedin.com/in/katarzyna-grasewicz-265b92181"
               >LINKEDIN</a
             >
           </div>
@@ -359,7 +504,12 @@
 
         <div class="contact__info-container">
           <h5>
-            <span class="hover"><a href="https://github.com/kgrasewicz/Portfolio" target="_blank">WEBSITE</a></span> DESIGNED AND DEVELOPED BY<br />
+            <span class="hover"
+              ><a href="https://github.com/kgrasewicz/Portfolio"
+                >WEBSITE</a
+              ></span
+            >
+            DESIGNED AND DEVELOPED BY<br />
             KASIA GRASEWICZ WITH COFFEE AND
             <div class="heart">
               <svg
